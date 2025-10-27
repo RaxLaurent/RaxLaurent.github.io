@@ -76,28 +76,31 @@ a {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  background: #1C1A1C;
+  background: linear-gradient(45deg, #FFD700, #FFA500);
   cursor: pointer;
   transition: all 450ms ease-in-out;
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
 }
 
 .sparkle {
-  fill: #AAAAAA;
+  fill: #FFFFFF;
   transition: all 800ms ease;
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.5));
 }
 
 .text {
   font-weight: 600;
-  color: #AAAAAA;
+  color: #FFFFFF;
   font-size: medium;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-  background: linear-gradient(0deg, #A47CF3, #683FEA);
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-    0px 0px 180px 0px #9917FF;
+  background: linear-gradient(45deg, #FFA500, #FFD700);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.6),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 4px rgba(255, 215, 0, 0.2),
+    0px 0px 180px 0px rgba(255, 215, 0, 0.4);
   transform: translateY(-2px);
 }
 
